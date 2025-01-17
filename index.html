@@ -3,80 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Email Signature 2</title>
   </head>
   <body>
-    <dev class="main">
-      <dev class="Personal_Info">
-        <h1>ROYS</h1>
-        <h2>Amine Rouiyasse</h2>
-        <h4>
-          Web designer
-          <hr />
-        </h4>
-      </dev>
-      <dev class="Profile">
-        <div class="profile_picture">
+    <header class="header">
+      <div class="container">
+        <div>
           <img
             src="https://i.ibb.co/f09kznM/mypic.jpg"
-            alt="mypic"
-            height="130px"
-            width="130px"
+            alt="my pic"
+            class="my-pic"
           />
         </div>
-        <dev class="links">
-          <a href="https://t.me/AmineRouiyasse" target="_blank"
-            ><img src="https://i.ibb.co/9y6s1GH/telegram.png" alt="telegram"
-          /></a>
-          <a
-            href="https://www.facebook.com/amine.roming?mibextid=ZbWKwL"
-            target="_blank"
-            ><img src="https://i.ibb.co/kQrqFzC/facebook.png" alt="facebook"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/amine-rouiyasse-b9967a330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            target="_blank"
-            ><img
-              src="https://i.ibb.co/dkFzcV2/linkedin-logo.png"
-              alt="linkedin-logo"
-          /></a>
-          <a
-            href="https://www.instagram.com/amineroys285?igsh=MW01aDB3NGtwZnhvNA=="
-            target="_blank"
-            ><img src="https://i.ibb.co/82rJQsF/instagram.png" alt="instagram"
-          /></a>
-        </dev>
-      </dev>
-      <dev class="Content">
-        <a
-          href="https://mail.google.com/mail/u/0/?hl=ar&tf=cm&fs=1&to=aminerouiyasse@gmail.com"
-          target="_blank"
+        <div>
+          <h1>Hi, I'm <span class="highlight">Amine Rouiyasse</span></h1>
+          <p>A Passionate Frontend Developer</p>
+          <div class="iconList">
+            <p>My Social Media</p>
+            <a href="https://t.me/AmineRouiyasse" target="_blank"
+              ><img
+                src="https://i.ibb.co/9y6s1GH/telegram.png"
+                alt="telegram"
+                class="icon"
+            /></a>
+            <a
+              href="https://www.facebook.com/amine.roming?mibextid=ZbWKwL"
+              target="_blank"
+              ><img
+                src="https://i.ibb.co/kQrqFzC/facebook.png"
+                alt="facebook"
+                class="icon"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/amine-rouiyasse-b9967a330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              ><img
+                src="https://i.ibb.co/dkFzcV2/linkedin-logo.png"
+                alt="linkedin"
+                class="icon"
+            /></a>
+            <a
+              href="https://www.instagram.com/amineroys285?igsh=MW01aDB3NGtwZnhvNA=="
+              target="_blank"
+              ><img
+                src="https://i.ibb.co/82rJQsF/instagram.png"
+                alt="instagram"
+                class="icon"
+            /></a>
+          </div>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am a frontend developer with a passion for creating stunning,
+          user-friendly websites. I specialize in HTML, CSS, and JavaScript and
+          enjoy turning ideas into beautiful ,functional designs, responsive
+          website.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5 & CSS3</li>
+          <li>JavaScript</li>
+          <li>Responsive Design</li>
+          <li>Version Control (Git)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you’d like to work together, feel free to reach out!</p>
+        <form
+          action="MAILTO:aminerouiyasse285@gmail.com"
+          method="post"
+          enctype="text/plain"
         >
-          <img
-            src="https://i.ibb.co/T8w3mpK/gmail-50.png"
-            alt="gmail-50"
-            height="15px"
-            width="15px"
-          />aminerouiyasse285@gmail.com
-        </a>
-        <a href="https://wa.me/message/Z6UYGLCPOSYGI1" target="_blank">
-          <img
-            src="https://i.ibb.co/tQpQVW4/whatsapp.png"
-            alt="whatsapp"
-            height="15px"
-            width="15px"
-          />0619459910
-        </a>
-        <a href="https://maps.app.goo.gl/KG7v3AcpbXGybqA5A" target="_blank">
-          <img
-            src="https://i.ibb.co/TYpzRqc/black-location-50.png"
-            alt="b-local"
-            height="15px"
-            width="15px"
-          />Morocco Fes-Meknes Meknes BMO HAY SEKKA 285
-        </a>
-      </dev>
-    </dev>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Amine Rouiyasse. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>

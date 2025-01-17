@@ -122,3 +122,12 @@ body {
   text-align: center;
   padding: 1rem 0;
 }
+
+@media only screen and (max-width: 650px) {
+  .header .container {
+    display: block;
+    justify-content: space-between;
+    justify-content: space-around;
+  }
+}
+

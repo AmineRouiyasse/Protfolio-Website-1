@@ -1,1 +1,1 @@
-# project 1
+A basic personal protfolio I only used HTML ans CSS 
